@@ -23,6 +23,7 @@ export default {
       type: Object,
       default: () => {}
     },
+    // 禁用
     disabled: {
       type: Boolean,
       default: false
