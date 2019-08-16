@@ -51,6 +51,9 @@ export default {
   template: `
     <div :style="main">
       <h1>Welcome to STORYBOOK</h1>
+      <slot></slot>
+      <br>
+      --------- ------ -----
       <p>
         This is a UI component dev environment for your app.
       </p>
