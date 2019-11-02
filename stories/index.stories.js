@@ -1,12 +1,11 @@
 /* eslint-disable react/react-in-jsx-scope, react/no-this-in-sfc */
-
 import { storiesOf } from "@storybook/vue";
 // import { action } from "@storybook/addon-actions";
 import { linkTo } from "@storybook/addon-links";
-
 // import MyButton from "./MyButton";
 import Welcome from "./Welcome";
 import CButtonDoc from "./Button/doc";
+// import CButtonDocR from "./Button/README.md";
 
 let PrTemplate = "自行YY脑洞 大胆PR 💗";
 
@@ -39,7 +38,9 @@ storiesOf("Welcome", module).add("to Storybook", () => ({
 //   }));
 
 storiesOf("Button", module)
-  .add("button 按钮", () => CButtonDoc)
+  .add("button 按钮", () => CButtonDoc, {
+    notes: "hello world"
+  })
   .add(PrTemplate, () => ({ template: `<div>${PrTemplate}</div>` }));
 
 /* eslint-enable react/react-in-jsx-scope */

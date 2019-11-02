@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 --debug-webpack",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
@@ -16,6 +16,13 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@storybook/addon-actions": "^5.0.5",
+    "@storybook/addon-info": "^5.1.11",
+    "@storybook/addon-links": "^5.0.5",
+    "@storybook/addon-notes": "^5.1.11",
+    "@storybook/addons": "^5.0.5",
+    "@storybook/vue": "^5.0.5",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-eslint": "^3.5.0",
     "@vue/cli-plugin-unit-jest": "^3.5.0",
@@ -25,16 +32,13 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.5",
+    "babel-preset-vue": "^2.0.2",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21",
-    "@storybook/vue": "^5.0.5",
-    "@storybook/addon-actions": "^5.0.5",
-    "@storybook/addon-links": "^5.0.5",
-    "@storybook/addons": "^5.0.5",
-    "babel-preset-vue": "^2.0.2",
-    "@babel/core": "^7.4.0",
-    "babel-loader": "^8.0.5"
+    "less": "3.10.3",
+    "less-loader": "5.0.0",
+    "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
     "root": true,
