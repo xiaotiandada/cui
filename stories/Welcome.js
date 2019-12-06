@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-console
-const log = () => console.log("Welcome to storybook!");
+const log = () => console.log("Welcome to CUI!");
 
 export default {
   name: "welcome",
@@ -50,7 +50,7 @@ export default {
 
   template: `
     <div :style="main">
-      <h1>Welcome to STORYBOOK</h1>
+      <h1>Welcome to CUI</h1>
       <slot></slot>
       <br>
       --------- ------ -----

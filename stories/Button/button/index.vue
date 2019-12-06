@@ -64,7 +64,7 @@ export default {
 
 <style scoped lang="less">
 // https://element.eleme.io/#/zh-CN/component/button
-@import "../common/var.less";
+@import "../../common/var.less";
 // $--button-hover-tint-percent: 20% !default;
 // $--button-active-shade-percent: 10% !default;
 

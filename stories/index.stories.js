@@ -4,12 +4,12 @@ import { storiesOf } from "@storybook/vue";
 import { linkTo } from "@storybook/addon-links";
 // import MyButton from "./MyButton";
 import Welcome from "./Welcome";
-import CButtonDoc from "./Button/doc";
+import CButtonDoc from "./Button/button/index.js";
 // import CButtonDocR from "./Button/README.md";
 
 let PrTemplate = "自行YY脑洞 大胆PR 💗";
 
-storiesOf("Welcome", module).add("to Storybook", () => ({
+storiesOf("Welcome", module).add(PrTemplate, () => ({
   components: { Welcome },
   template: `<welcome :showApp="action">
     ${PrTemplate}
@@ -37,10 +37,6 @@ storiesOf("Welcome", module).add("to Storybook", () => ({
 //     methods: { action: action("clicked") }
 //   }));
 
-storiesOf("Button", module)
-  .add("button 按钮", () => CButtonDoc, {
-    notes: "hello world"
-  })
-  .add(PrTemplate, () => ({ template: `<div>${PrTemplate}</div>` }));
+storiesOf("Button", module).add("button 按钮", () => CButtonDoc);
 
 /* eslint-enable react/react-in-jsx-scope */

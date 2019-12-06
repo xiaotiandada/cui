@@ -1,5 +1,5 @@
 import CButton from "./index.vue";
-import "./doc.less";
+import "./index.less";
 export default {
   name: "button-doc",
   components: { CButton },

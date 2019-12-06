@@ -8,7 +8,9 @@ module.exports = async ({ config, mode }) => {
   // 'PRODUCTION' is used when building the static version of storybook.
 
   // Make whatever fine-grained changes you need
-  config.module.rules.push({
+  config.module.rules.push(
+    // less
+    {
     test: /\.less$/,
     use: ['style-loader', 'css-loader', 'less-loader'],
     include: path.resolve(__dirname, '../'),
