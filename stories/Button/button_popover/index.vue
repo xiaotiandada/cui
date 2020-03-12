@@ -130,7 +130,7 @@ export default {
         background: red;
       }
     }
-    &.bottom {
+    &.left {
       &::before {
         left: 50%;
         top: -32px;

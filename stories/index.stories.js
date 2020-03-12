@@ -5,6 +5,7 @@ import { linkTo } from "@storybook/addon-links";
 // import MyButton from "./MyButton";
 import Welcome from "./Welcome";
 import CButtonDoc from "./Button/button/index.js";
+import CButtonDoc1 from "./Button/button1/index.js";
 import CButtonPopoverDoc from "./Button/button_popover/index.vue";
 // import CButtonDocR from "./Button/README.md";
 
@@ -39,6 +40,7 @@ storiesOf("Welcome", module).add(PrTemplate, () => ({
 //   }));
 
 storiesOf("Button", module).add("普通按钮", () => CButtonDoc);
+storiesOf("Button", module).add("普通按钮1", () => CButtonDoc1);
 storiesOf("Button", module).add("弹出内容", () => ({
   components: { CButtonPopoverDoc },
   render(h) {
