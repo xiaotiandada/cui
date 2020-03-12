@@ -5,6 +5,7 @@ import { linkTo } from "@storybook/addon-links";
 // import MyButton from "./MyButton";
 import Welcome from "./Welcome";
 import CButtonDoc from "./Button/button/index.js";
+import CButtonPopoverDoc from "./Button/button_popover/index.vue";
 // import CButtonDocR from "./Button/README.md";
 
 let PrTemplate = "自行YY脑洞 大胆PR 💗";
@@ -37,6 +38,19 @@ storiesOf("Welcome", module).add(PrTemplate, () => ({
 //     methods: { action: action("clicked") }
 //   }));
 
-storiesOf("Button", module).add("button 按钮", () => CButtonDoc);
+storiesOf("Button", module).add("普通按钮", () => CButtonDoc);
+storiesOf("Button", module).add("弹出内容", () => ({
+  components: { CButtonPopoverDoc },
+  render(h) {
+    return (
+      <div>
+        <CButtonPopoverDoc placement="top" />
+        <CButtonPopoverDoc placement="right" />
+        <CButtonPopoverDoc />
+        <CButtonPopoverDoc placement="left" />
+      </div>
+    );
+  }
+}));
 
 /* eslint-enable react/react-in-jsx-scope */
