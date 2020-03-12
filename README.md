@@ -2,7 +2,8 @@
 
 > 施工中👷👷‍...
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3f9ec75d-eee0-458d-afa5-4d2feb53d800/deploy-status)](https://app.netlify.com/sites/suspicious-dijkstra-89679a/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3f9ec75d-eee0-458d-afa5-4d2feb53d800/deploy-status)](https://app.netlify.com/sites/cuii/deploys)
+
 ## Project setup
 ```
 yarn install
