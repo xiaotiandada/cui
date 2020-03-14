@@ -3,7 +3,11 @@
     :href="href"
     :target="target"
     class="c-button"
-    :style="{ width: width + 'px', height: height + 'px' }"
+    :style="{
+      width: width + 'px',
+      height: height + 'px',
+      lineHeight: height + 'px'
+    }"
   >
     <slot></slot>
     <svg

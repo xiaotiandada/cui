@@ -6,7 +6,7 @@ import { linkTo } from "@storybook/addon-links";
 import Welcome from "./Welcome";
 import CButtonDoc from "./Button/button/index.js";
 import CButtonDoc1 from "./Button/button1/index.js";
-import CButtonDoc2 from "./Button/button2/index.js";
+import CButtonDoc2 from "./Button/button2/index.vue";
 import CButtonPopoverDoc from "./Button/button_popover/index.vue";
 // import CButtonDocR from "./Button/README.md";
 
@@ -41,8 +41,33 @@ storiesOf("Welcome", module).add(PrTemplate, () => ({
 //   }));
 
 storiesOf("Button", module).add("普通按钮", () => CButtonDoc);
-storiesOf("Button", module).add("普通按钮1", () => CButtonDoc1);
-storiesOf("Button", module).add("普通按钮2", () => CButtonDoc2);
+storiesOf("Button", module).add("背景位移", () => CButtonDoc1);
+storiesOf("Button", module).add("线框填充", () => ({
+  components: {
+    CButton: CButtonDoc2
+  },
+  render(h) {
+    return (
+      <div>
+        <c-button width="60">一</c-button>
+        <br />
+        <br />
+        <c-button width="90">按钮</c-button>
+        <br />
+        <br />
+        <c-button width="90" height="120">
+          按钮
+        </c-button>
+        <br />
+        <br />
+        <c-button>按钮一</c-button>
+        <br />
+        <br />
+        <c-button>查看详情</c-button>
+      </div>
+    );
+  }
+}));
 storiesOf("Button", module).add("弹出内容", () => ({
   components: { CButtonPopoverDoc },
   render(h) {
