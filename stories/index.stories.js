@@ -10,6 +10,8 @@ import CButtonDoc2 from "./Button/button2/index.vue";
 import CButtonPopoverDoc from "./Button/button_popover/index.vue";
 // import CButtonDocR from "./Button/README.md";
 
+import CBox from "./Box/box/index.vue";
+
 let PrTemplate = "自行YY脑洞 大胆PR 💗";
 
 storiesOf("Welcome", module).add(PrTemplate, () => ({
@@ -77,6 +79,20 @@ storiesOf("Button", module).add("弹出内容", () => ({
         <CButtonPopoverDoc placement="right" />
         <CButtonPopoverDoc />
         <CButtonPopoverDoc placement="left" />
+      </div>
+    );
+  }
+}));
+
+storiesOf("Box", module).add("盒子", () => ({
+  components: CBox,
+  render(h) {
+    return (
+      <div style="padding: 100px">
+        <CBox />
+        <CBox width={200} height={200} />
+        <CBox width={400} height={200} />
+        <CBox width={200} height={400} />
       </div>
     );
   }
